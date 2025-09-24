@@ -1,0 +1,17 @@
+#include <stdio.h> 
+
+int main() { 
+    int x, y, sum, sub, multiply, rem; 
+    printf("enter x = "); 
+    scanf("%d", &x); 
+    printf("enter y = "); 
+    scanf("%d", &y); 
+    sum = x + y; 
+    sub = x - y; 
+    multiply = x * y; 
+    rem = x % y; 
+    printf("addition = %d \n subtraction = %d \n multiply = %d \n remainder = %d \n", sum, sub, 
+              multiply, rem);
+
+return 0; 
+}
