@@ -1,0 +1,8 @@
+#include <stdio.h> 
+
+int main() { 
+
+    printf("%d", sizeof(45.4f)); 
+
+    return 0;
+}
