@@ -1,0 +1,21 @@
+#include <stdio.h> 
+int main() { 
+    int x; 
+    int y;
+    printf("Enter x: "); 
+    scanf("%d", &x); 
+    printf("Enter y: "); 
+    scanf("%d", &y); 
+
+    if((x>y)) { 
+            printf("x is large %d \n", x);
+        } 
+        
+        else { 
+            printf("y is large %d \n", y);
+        }
+
+
+
+    return 0;
+}
