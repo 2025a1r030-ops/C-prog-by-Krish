@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main() {
+    int amount, notes;
+    scanf("%d", &amount);
+
+    int d = 500; 
+
+    while (amount > 0) {
+        notes = amount / d;
+        if (notes > 0) {
+            printf("%d: %d\n", d, notes);
+            amount %= d;
+        }
+
+        
+        switch (d) {
+            case 500: d = 100; break;
+            case 100: d = 50; break;
+            case 50:  d = 20; break;
+            case 20:  d = 10; break;
+            case 10:  d = 5;  break;
+            case 5:   d = 2;  break;
+            case 2:   d = 1;  break;
+            default:  d = 0;  // end loop
+        }
+    }
+    return 0;
+}
+
+
