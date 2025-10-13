@@ -1,0 +1,9 @@
+#include <stdio.h> 
+int main() { 
+    int stu[4] = {67,45,90,12}; 
+    printf("%d \n", stu[0]); 
+    printf("%d \n", stu[1]); 
+    printf("%d \n", stu[2]); 
+    printf("%d \n", stu[3]); 
+    return 0; 
+}
