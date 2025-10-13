@@ -6,11 +6,11 @@ int main() {
     int stu[size];
     //reading the elements of an array 
     printf("Enter roll number of %d students : ", size); 
-    for(int i=0; i<5; i++) { 
+    for(int i=0; i<size; i++) { 
         scanf("%d", &stu[i]); 
     }  
     //displaying the elements of an array 
-    for(int i=0; i<5; i++) { 
+    for(int i=0; i<size; i++) { 
         printf("%d \t", stu[i]); //when size is not mentioned
     }   
     // Displaying roll numbers in reverse order 
