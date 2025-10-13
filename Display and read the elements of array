@@ -1,0 +1,15 @@
+#include <stdio.h> 
+int main() { 
+    int stu[5]; 
+    //reading the elements of an array 
+    printf("Enter the roll number of 5 students : "); 
+    for(int i=0; i<5; i++) { 
+        scanf("%d", &stu[i]); 
+    }  
+    //displaying the elements of an array 
+    for(int i=0; i<5; i++) { 
+        printf("%d \t", stu[i]); //when size is mentioned
+    }  
+     
+    return 0; 
+}
