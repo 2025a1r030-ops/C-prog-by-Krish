@@ -1,0 +1,17 @@
+#include <stdio.h> 
+int main() { 
+   int student[9][9] = {0}; 
+   for(int row = 0; row < 9; row++) { 
+    for(int coloumn = 0; coloumn < 9; coloumn++) { 
+        if(student[0][5] == 0) { 
+            student[0][5] = 10; 
+            printf("%d ", student[row][coloumn]); 
+        }else{ 
+            printf("%d ", student[row][coloumn]); 
+            }
+        
+    } 
+    printf("\n");
+   }
+   return 0;
+} 
