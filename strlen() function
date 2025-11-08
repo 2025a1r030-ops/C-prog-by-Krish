@@ -1,0 +1,9 @@
+#include <stdio.h> 
+#include <string.h>
+int main(){  
+    //strlen() 
+    char name[100] = "Krish"; 
+    int length = strlen(name); 
+    printf("length is: %d", length); 
+    return 0;
+   }
