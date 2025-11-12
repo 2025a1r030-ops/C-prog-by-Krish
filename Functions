@@ -1,0 +1,15 @@
+#include <stdio.h> 
+
+//function declaration or prototype 
+    void sayMorning(void); 
+
+//function calling
+    int main() {   
+        sayMorning();  
+        return 0;
+}  
+
+//function defintion 
+void sayMorning(void) {
+printf("Good Morning, Hare Krishna");  
+}
