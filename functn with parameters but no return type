@@ -1,0 +1,20 @@
+//function with parameters but have return type
+#include <stdio.h> 
+
+//function declaration
+int addition(int, int);
+
+//function calling 
+int main() { 
+int x = 100, y = 400; 
+addition(x, y);
+return 0; 
+}  
+
+//function definition 
+int addition(int a, int b) { 
+    int num; 
+    int result = a + b;
+    printf("sum = %d", result); 
+    return result;
+}
