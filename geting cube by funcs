@@ -1,0 +1,18 @@
+//function with parameters and have return type
+#include <stdio.h> 
+
+//function declaration
+float getcube(float);
+
+//function calling 
+int main() { 
+float cube = getcube(5); 
+printf("Cube = %f", cube);
+return 0; 
+}  
+
+//function definition  { 
+    float getcube(float num) {  
+        
+    return num * num * num;
+}
