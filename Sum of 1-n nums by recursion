@@ -1,0 +1,22 @@
+#include <stdio.h> 
+//function prototype
+int sumofnumbers(int n); 
+
+//function call 
+int main() { 
+    int N; 
+    printf("Enter N : "); 
+    scanf("%d", &N);
+    int sum = sumofnumbers(N); 
+    printf("Sum of numbers 1 to %d = %d \n", N, sum); 
+    return 0; 
+}
+
+    int sumofnumbers(int n) { 
+        if(n == 0) 
+        return 0;  
+        
+        return n + sumofnumbers(n-1); 
+    }
+
+
