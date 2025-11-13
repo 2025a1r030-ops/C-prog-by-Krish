@@ -1,0 +1,16 @@
+#include <stdio.h> 
+void show(int x) { 
+    if(x == 13) 
+    return; 
+    printf("x = %d\n", x);  //ascending order hai before the recursive call
+    x++; 
+    show(x); 
+    printf("x = %d\n", x); //decsending order after the recursive call 
+}
+int main() { 
+    int x = 10; 
+     x++; 
+     show(x); 
+     printf("x = %d\n", x);
+return 0; 
+}
