@@ -1,0 +1,18 @@
+#include <stdio.h> 
+//WAP to print the series of number 1 to N using recursion 
+void printseries(int n);
+
+int main() { 
+    int N;  
+    printf("Enter the value of N : "); 
+    scanf("%d", &N);  
+    printseries(N); 
+    return 0;
+}  
+
+void printseries(int n) { 
+    if(n == 0)  
+    return; 
+    printseries(n-1); 
+    printf("%d ", n);
+}
