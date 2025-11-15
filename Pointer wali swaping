@@ -1,0 +1,12 @@
+#include <stdio.h> 
+int main() { 
+    int x, y, c; 
+    int *p = &x, *q = &y; 
+    printf("Enter two numbers : "); 
+    scanf("%d %d", p, q); 
+    c = *p; 
+    *p = *q; 
+    *q = c;  
+    printf("After swap x = %d and y = %d", *p, *q);
+    return 0;
+}
