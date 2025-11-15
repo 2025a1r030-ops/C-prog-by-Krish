@@ -1,0 +1,10 @@
+#include <stdio.h> 
+int main() { 
+    float x, y; 
+    float *p = &x, *q = &y; 
+    printf("Enter two numbers : "); 
+    scanf("%f %f", p, q); 
+     
+    printf("x = %.2f and y = %.2f", *p, *q);
+    return 0;
+}
