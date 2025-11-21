@@ -1,0 +1,13 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+//addition of two numbers using DMA
+int main() { 
+    int *p1 = (int*) malloc(sizeof(int)); 
+    int *p2 = (int*) malloc(sizeof(int)); 
+    printf("Enter two numbers : "); 
+    scanf("%d %d", p1, p2); 
+    int sum = *p1 + *p2; 
+    printf("sum = %d", sum);
+    
+    return 0;
+}
