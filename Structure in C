@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>  
+
+struct student{  
+  char name[50]; 
+  int rollnumber; 
+  char course[20]; 
+  char branch[20]; 
+  float marks; 
+};
+
+int main() { 
+  struct student s1 = {"Andy Smith", 1001, "BTech", "CSE", 67.9};  
+  printf("Name = %s\n", s1.name); 
+  printf("Roll number = %d\n", s1.rollnumber); 
+  printf("Course = %s\n", s1.course); 
+  printf("Branch = %s\n", s1.branch); 
+  printf("Marks = %f\n", s1.marks);
+
+    return 0;
+}
