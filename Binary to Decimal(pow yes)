@@ -1,0 +1,24 @@
+#include <stdio.h> 
+#include <math.h> 
+
+//binary to decimal
+int main() { 
+    int n, sum = 0, p = 0; 
+    printf("Enter number: "); 
+    scanf("%d", &n); 
+
+    int n1 = n;
+
+    while(n != 0){ 
+        int rem = n%10; 
+        sum += rem * pow(2, p); 
+        p++; 
+        n /= 10;
+    } 
+
+    printf("Decimal of %d is %d", n1, sum);
+
+
+
+    return 0;
+}
