@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+// IMPLEMENT List using an array
+int main() {
+    while(1){
+        printf("1. Insert in Beginning\n");
+        printf("2. Insert at End\n");
+        printf("3. Insert at any position\n");
+        printf("4. Delete from Beginning\n");
+        printf("5. Delete from End\n");
+        printf("6. Delete from given position\n");
+        printf("7. Display List\n");
+        printf("8. Search Element\n");
+        printf("9. Update element\n");
+        printf("10. Sort Elements of List\n");
+        printf("11. Exit\n");
+
+        int choice;
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+
+        switch(choice){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case 11:
+                break;
+            default:
+                printf("Invalid Choice !!!\n");
+        }
+    }
+}
