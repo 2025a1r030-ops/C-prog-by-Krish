@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h> 
+#include <ctype.h> 
+
+int prcd(char op){ 
+    switch(op){ 
+        case '+': 
+        case '-': 
+            return 1; 
+            
+        case '*': 
+        case '/': 
+            return 2; 
+            
+        case '^': 
+            return 3;  
+            
+        default: 
+            return 0;
+    }
+} 
+
+void strrev(char *str){ 
+    int i, j; 
+   int len = strlen(str); 
+    for(i =0, j=len-1; i<j; i++, j--){ 
+        char temp = str[i]; 
+        str[i] = str[j]; 
+        str[j] = temp;
+    }
+} 
+
+char* InfixToPrefix(char* Exp){ 
+    int len = strlen(Exp), top = -1, r = 0; 
+    char* prefix = (char*) malloc(len+1); 
+    char opt[len]; 
+    
+    for(int i=len-1; i>=0; i--){ 
+        char ch = Exp[i];
+        if(isalnum(ch)) 
+            prefix[r++] = ch; 
+        
+        else if(ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^'){ 
+            while(top != -1 && (prcd(ch) < prcd(opt[top]) || (prcd(ch) == prcd(opt[top]) && ch == '^'))){ 
+                prefix[r++] = opt[top--];
+            } 
+            opt[++top] = ch;
+        } 
+        
+        else if(ch == ')') 
+            opt[++top] = ch; 
+        
+        else if(ch == '('){ 
+            while(opt[top] != ')'){ 
+                prefix[r++] = opt[top--]; 
+            } 
+            top--;
+        } 
+    } 
+    
+    while(top != -1){ 
+        prefix[r++] = opt[top--]; 
+    } 
+    
+    prefix[r] = '\0'; 
+    strrev(prefix); 
+    return prefix;
+}
+
+int main() { 
+    char exp[100]; 
+    fgets(exp, sizeof(exp), stdin); 
+    
+    printf("%s\n", InfixToPrefix(exp));
+
+    
+    return 0;
+}
